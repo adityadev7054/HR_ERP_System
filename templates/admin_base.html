@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR ERP System - Admin</title>
+    <link rel="stylesheet" href="/static/mystyle.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:rgb(117, 230, 151);">
+<center>
+<h1>HR ERP System</h1>
+</center>
+
+<!-- Admin Navbar -->
+<div class="navbar">
+    <a href="/admin-dashboard">Home</a>
+    <a href="/add-employee">Add Employee</a>
+    <a href="/show-employee">Show Employee</a>
+    <a href="/search-employee">Search Emp</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<!-- Page content -->
+{% block content %}{% endblock %}
+
+</body>
+</html>

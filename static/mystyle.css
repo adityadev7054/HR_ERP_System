@@ -1,0 +1,72 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 15px;
+gap: 50px;
+font-size: 25px;
+background-color: rgb(66, 200, 245);
+border: 2px solid black;
+
+}
+
+a{
+
+    text-decoration: none;
+    
+}
+
+.admin-container{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+   background-color: rgb(66, 200, 245);
+}
+
+.admin-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    gap: 5px;
+    padding: 15px;
+   
+}
+
+.add{
+    border: 1px solid black;
+    background-color:rgb(66, 200, 245);
+    padding: 15px;
+    
+}
+
+span h1{
+    color: brown;
+}
+
+form{
+    color: black;
+}
+
+body{
+    background-color: rgb(117, 230, 151);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.searchemp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(66, 200, 245);
+    padding: 15px;
+    margin-top: 20px;
+
+}

@@ -1,0 +1,23 @@
+.container-fluid {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+margin-right: 20px;
+border: 2px solid black;
+
+}
+
+body{
+    background-color: rgb(117, 117, 230);
+}
+
+.menu-link {
+color: aqua;
+   margin-right: 40px;
+   margin-top: 20px;
+   display: inline-block;
+}
+
+center{
+    margin-top: 40px;
+}

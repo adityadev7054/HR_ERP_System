@@ -1,0 +1,16 @@
+{% extends "admin_base.html" %}
+
+{% block content %}
+
+<div class="searchemp">
+<span><h1>Search Employee</h1></span>
+<hr>
+<form action="/emp_searchprocess" method="post">
+    Enter Name : <input type="text" name="txtName" placeholder="enter name">
+    <br><br>
+    <center>
+    <input type="submit" value="Search" class="btn btn-primary">   
+    </center> 
+</form>
+</div>
+{% endblock %}

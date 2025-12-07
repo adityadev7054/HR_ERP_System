@@ -1,0 +1,57 @@
+
+{% extends "admin_base.html" %}
+
+{% block content %}
+
+<div align="center" class="add">
+<span><h1>Add New Employee</h1></span>
+<hr>
+
+<form action="/save-employee" method="post" onsubmit="return validateForm()">
+Emp Id : <input type="text" name="txtempid" pattern="[0-9]+" title="Only numbers allowed" required><br><br>
+Name : <input type="text" name="txtname" required><br><br>
+Email : <input type="email" name="txtemail" required><br><br>
+Mobile : <input type="text" name="txtmobile" maxlength="10" pattern="[0-9]{10}" title="Exactly 10 digits required" required><br><br>
+Designation : <input type="text" name="txtdesig"><br><br>
+Salary : <input type="text" name="txtsalary" pattern="[0-9]+" title="Only digits allowed" required><br><br>
+<input type="submit" value="Register" class="btn btn-success">
+</form>
+</div>
+
+<script>
+function validateForm(){
+    var empid = document.querySelector('input[name="txtempid"]').value;
+    var mobile = document.querySelector('input[name="txtmobile"]').value;
+    var email = document.querySelector('input[name="txtemail"]').value;
+    var salary = document.querySelector('input[name="txtsalary"]').value;
+    
+    // Emp ID - only numbers
+    if(!/^\d+$/.test(empid)){
+        alert('Emp ID must contain only numbers');
+        return false;
+    }
+    
+    // Mobile - exactly 10 digits
+    if(mobile.length !== 10 || !/^\d{10}$/.test(mobile)){
+        alert('Mobile number must be exactly 10 digits');
+        return false;
+    }
+    
+    // Email validation
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailPattern.test(email)){
+        alert('Please enter valid email');
+        return false;
+    }
+    
+    // Salary - only numbers
+    if(!/^\d+$/.test(salary)){
+        alert('Salary must contain only numbers');
+        return false;
+    }
+    
+    return true;
+}
+</script>
+
+{% endblock %}

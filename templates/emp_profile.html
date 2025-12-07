@@ -1,0 +1,29 @@
+{% extends "admin_base.html" %}
+
+{% block content %}
+
+<center>
+<h1>Employee Profile</h1>
+
+<form action="/emp-update" method="post">
+
+    {% for n in recordlist %}
+
+
+   
+Emp Id : <input type="text" value="{{n[0]}}" name="txtempid"><br><br>
+Name : <input type="text" value="{{n[1]}}" name="txtname"><br><br>
+Email : <input type="text" value="{{n[2]}}" name="txtemail"><br><br>
+Mobile : <input type="text" value="{{n[3]}}" name="txtmobile"><br><br>
+Designation : <input type="text" value="{{n[4]}}" name="txtdesig"><br><br>
+Salary : <input type="text" value="{{n[5]}}" name="txtsalary"><br><br>
+
+ 
+<input type="submit" value="Update" class="btn btn-success">
+&nbsp;&nbsp;&nbsp;
+<a href="/emp-delete?id={{n[0]}}" class="btn btn-danger">Delete</a>
+</form>
+    {% endfor %}
+
+</center>
+{% endblock %}

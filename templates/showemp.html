@@ -1,0 +1,64 @@
+
+<style>
+table {
+  
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+td, th {
+  
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+td{
+  background-color:rgb(66, 200, 245);;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+          
+
+
+th {
+ 
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #04AA6D;
+  color: black;
+}
+</style>
+{% extends "admin_base.html" %}
+{% block content %}
+<center>
+<span><h1>Show Employee</h1></span>
+</center>
+
+<table>
+  <tr class="cont">
+    <th>Emp Id</th>
+    <th>Emp Name</th>
+    <th>Designation</th>
+    <th></th>
+  </tr>
+
+  {% for n in recordlist %}
+
+    <tr>
+        <td>{{ n[0] }}</td>
+        <td>{{ n[1] }}</td>
+        <td>{{ n[2] }}</td>
+        <td><a href="/emp-profile?eid={{n[0]}}"  class="btn btn-primary">View Profile</a></td>
+    </tr>
+    {% endfor %}
+
+  
+</table>
+
+{% endblock %}
