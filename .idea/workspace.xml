@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ebb73b-c688-4232-af3c-22155aedaafc" name="Changes" comment="" />
+    <list default="true" id="07ebb73b-c688-4232-af3c-22155aedaafc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +22,12 @@
     &quot;assignee&quot;: &quot;devadityavis70&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/adityadev7054/HR_ERP_System.git",
-    "accountId": "949e87b5-a744-4acf-a0dc-75aa878b687c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/adityadev7054/HR_ERP_System.git&quot;,
+    &quot;accountId&quot;: &quot;949e87b5-a744-4acf-a0dc-75aa878b687c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -45,7 +47,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dell/Desktop/flask project&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/flask project&quot;
   }
 }</component>
   <component name="SharedIndexes">
